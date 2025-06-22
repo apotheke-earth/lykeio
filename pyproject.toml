@@ -1,6 +1,6 @@
 [project]
 name = "lykeio"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = [
     {name = "Vasilis Valatsos",email = "aethrvmn@apotheke.earth"}
@@ -8,7 +8,8 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "mcp (>=1.9.4,<2.0.0)"
+    "mcp (>=1.9.4,<2.0.0)",
+    "datasets (>=3.6.0,<4.0.0)"
 ]
 
 [tool.poetry]
