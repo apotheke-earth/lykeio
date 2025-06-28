@@ -117,7 +117,7 @@ class BlackJackCourse(BaseCourse):
         if dealer_total == player_total:
             reward = 0
             return (
-                StateDescription('A draw. Nobody wins')
+                StateDescription('A draw. Nobody wins'),
                 reward,
                 terminated,
                 truncated,
@@ -158,7 +158,7 @@ class BlackJackCourse(BaseCourse):
         values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
         suits = ['Hearts', 'Clubs', 'Spades', 'Diamonds']
 
-        for suits in suits:
+        for suit in suits:
             for value in values:
                 deck.append((value, suit))
         random.shuffle(deck)
